@@ -19,7 +19,7 @@ public enum HType {
     this.value = (byte)value;
   }
 
-  public int getValue() {
+  public byte getValue() {
     return this.value;
   }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--AgileJ Ltd. (http://www.agilej.com)--><ajsv>
+    <diagram creationDate="2016-mrt-20 15:46" licenseGrade="single" licenseeName="Robert_Stevens" licenseeOrganization="personal" populationMethod="manual" version="1.8.3.v20151019-2113">
+        <filterScript>
+
+// no filter script yet defined for this class diagram
+// use CTRL+SPACE for completion suggestions
+
+</filterScript>
+        <class className="dhcp.dataTypes.DCHPMessage" project="dhcp" xLocation="1771" yLocation="30"/>
+        <class className="udp.ReceiveData" project="dhcp" xLocation="317" yLocation="723"/>
+        <class className="main.ServerMain" project="dhcp" xLocation="1055" yLocation="325"/>
+        <class className="udp.SendData" project="dhcp" xLocation="347" yLocation="409"/>
+        <class className="dhcp.Processor" project="dhcp" xLocation="1356" yLocation="176"/>
+    </diagram>
+</ajsv>

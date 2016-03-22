@@ -1,7 +1,7 @@
-package dhcp.dataTypes;
+package dhcp.constants;
 //DHCP Message Type 53 Values
 public enum DHCPMessageType {
-  DHCPDISCOVER(1),
+  DHCPDISCOVER(1), /* this option is implemented */
   DHCPOFFER(2),
   DHCPREQUEST(3),
   DHCPDECLINE(4),
@@ -25,7 +25,7 @@ public enum DHCPMessageType {
     this.value =(byte)value;
   }
   
-  byte getValue(){
+  public byte getValue(){
     return value;
   }
 }

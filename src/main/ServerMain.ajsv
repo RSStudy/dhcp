@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--AgileJ Ltd. (http://www.agilej.com)--><ajsv>
+    <diagram creationDate="2016-mrt-20 15:42" licenseGrade="single" licenseeName="Robert_Stevens" licenseeOrganization="personal" populationMethod="Wizard+INHERITANCE" version="1.8.3.v20151019-2113">
+        <filterScript>
+
+// no filter script yet defined for this class diagram
+// use CTRL+SPACE for completion suggestions
+
+</filterScript>
+        <class className="main.ServerMain" project="dhcp" xLocation="30" yLocation="61"/>
+        <class className="java.lang.Object" project="dhcp" xLocation="628" yLocation="30"/>
+    </diagram>
+</ajsv>

@@ -22,8 +22,14 @@ public class SendData {
     String out = "This is a message from the send class";
     byte[] data = out.getBytes();
     DatagramPacket send = new DatagramPacket(data, data.length, IPAddress, 8001);
+    System.err.println(data.length);
     socket.send(send);
     System.out.println("message send" );
+    socket.close();
+  }
+  public SendData(DatagramPacket send) throws IOException{
+    DatagramSocket socket = new DatagramSocket();
+    socket.send(send);
     socket.close();
   }
   

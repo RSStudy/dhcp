@@ -1,5 +1,11 @@
 package dhcp.dataTypes;
 
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+
+import helper.ArrayHelpers;
+
 public class OptionsGenerator {
   static byte[] GenerateOptions(DHCPMessageGeneratorType type) {
     byte[] out = null;
@@ -22,19 +28,27 @@ public class OptionsGenerator {
 
   }
 
-  private static void Discover() {
+  private static byte[] Discover() {
+    
+    //ArrayHelpers.concat((new Options()).serialize;, b)
+    return null;
 
   }
 
-  private static void Offer() {
+  private static byte[] Offer() {
+    return null;
 
   }
 
-  private static void Request() {
+  private static byte[] Request() {
+    return null;
 
   }
 
-  private static void Ack() {
+  private static byte[] Ack() {
+    return null;
 
   }
+  
+
 }

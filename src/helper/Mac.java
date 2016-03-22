@@ -21,10 +21,19 @@ public class Mac {
    * @throws UnknownHostException
    * @throws SocketException
    */
-  public Mac() throws UnknownHostException, SocketException{
-    InetAddress address = InetAddress.getLocalHost();
+  public Mac(){
+    InetAddress address;
+    try {
+      address = InetAddress.getLocalHost();
     NetworkInterface ni = NetworkInterface.getByInetAddress(address);
     setMac(ni.getHardwareAddress());
+    } catch (UnknownHostException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (SocketException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
 
   /**
@@ -35,6 +44,10 @@ public class Mac {
     setMac(mac);
   }
   
+  public Mac(Mac clone) {
+    this.mac = clone.mac;
+  }
+
   private void setMac(byte[] mac){
     this.mac = mac;
   }
@@ -58,5 +71,10 @@ public class Mac {
       out += (i%2 == 0)? ":" : "";              /* add the : to make the address easier to read */
     }
     return out;
+  }
+
+  public void DeSerialize(byte[] data) {
+    this.mac = data;
+    
   }
 }
